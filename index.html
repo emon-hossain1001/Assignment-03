@@ -32,7 +32,7 @@
   </head>
   <body class="container mx-auto p-1 lg:p-8 w-full lg:w-4/5 font-manrope">
     <header>
-      <nav>
+      <nav class="lg:mb-10 mb-4">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -56,14 +56,15 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-              <li class="text-[#FF4240]"><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+                <li class="text-[#FF4240]"><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="text-2xl lg:text-3xl text-[#131318] font-bold lg:font-extrabold"
+            <a
+              class="text-2xl lg:text-3xl text-[#131318] font-bold lg:font-extrabold"
               >Hockey<span class="text-[#FF4240]">’</span>s</a
             >
           </div>
@@ -78,10 +79,71 @@
           </div>
           <div class="navbar-end">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-             <button class=" btn text-base lg:text-xl text-white bg-[#FF4240] ml-1 lg:ml-4">Get Ticket</button>
+            <button
+              class="btn text-base lg:text-xl text-white bg-[#FF4240] ml-1 lg:ml-4"
+            >
+              Get Ticket
+            </button>
           </div>
         </div>
       </nav>
+      <!-- carousel section -->
+      <section class="relative w-full">
+        <div class="carousel w-full rounded-xl">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="./Images/1.png"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between left-10 bottom-1 lg:bottom-10 space-x-2"
+            >
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="./Images/slider-1.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between left-10 bottom-1 lg:bottom-10 space-x-2"
+            >
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="./Images/slider-2.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between left-10 bottom-1 lg:bottom-10 space-x-2"
+            >
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="./Images/slider-3.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between left-10 bottom-1 lg:bottom-10 space-x-2"
+            >
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="lg:absolute lg:right-10 lg:bottom-10 bg-[#131318] lg:w-1/2 lg:p-5 p-2 rounded-2xl lg:m-0 mt-5">
+            <h2 class="lg:text-2xl text-xl font-semibold lg:font-bold text-white mb-2">Meet all the heroes from the field</h2>
+            <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+      </section>
     </header>
   </body>
 </html>
